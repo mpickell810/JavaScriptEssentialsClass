@@ -1,4 +1,4 @@
-function submitt() {
+function submit() {
     alert('Thank you for your valuable feedback')
 
     const username = document.getElementById('name').value;
