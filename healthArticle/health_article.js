@@ -15,10 +15,11 @@ xhr.onload = function() {
 
             var articleDiv = document.createElement('div');
             articleDiv.classList.add('article');
-            articleDiv.appendChild(title);
+            
 
             var title = document.createElement('h2');
             title.textContent = article.title;
+            articleDiv.appendChild(title);
 
             var description = document.createElement('p');
             description.textContent = article.description;
@@ -57,5 +58,6 @@ xhr.onload = function() {
     console.error('Failed to load JSON data');
 }
 
-xhr.send();
 }
+
+xhr.send();
